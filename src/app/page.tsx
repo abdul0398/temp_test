@@ -2,12 +2,7 @@
 "use client";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 
-function Example() {
-  return <BeakerIcon className="h-5 w-5 text-blue-500" />;
-}
-
 import { useQuery } from "@tanstack/react-query";
-import TestSupabase from "./component/testSupabase";
 
 async function fetchData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -31,7 +26,6 @@ export default function Home() {
 
   return (
     <div>
-      <TestSupabase />
       <BeakerIcon height={100} />
       {data &&
         data.map((post) => (
