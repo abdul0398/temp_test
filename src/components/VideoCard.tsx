@@ -78,7 +78,7 @@ export default function VideoCard({ video }: VideoCardProps) {
       {/* Video Details */}
       <div className="p-4">
         <h3 className=" text-white text-sm line-clamp-2 cursor-pointer">
-          @{video.title}
+          {video.title}
         </h3>
 
         {/* Channel and Publish Date */}
